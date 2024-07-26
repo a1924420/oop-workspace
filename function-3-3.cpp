@@ -27,6 +27,10 @@ double weighted_average(int array[], int n){
 
     }
 
-    return total/n;
+    double weightedAvg = total / n;
+
+    weightedAvg = static_cast<int>(weightedAvg * 10) / 10.0;
+
+    return weightedAvg;
 
 }

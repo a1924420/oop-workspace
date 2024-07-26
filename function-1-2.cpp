@@ -1,19 +1,18 @@
 #include <iostream>
 
 double array_mean(int array[], int n){
+
+    if (n < 1) return 0;
+
     int total = 0;
-    int a = 0;
+
     for (int i = 0; i < n; i++) {
-        if (n < 1){
-            total = 0.0;
-        } else {
             total = total + array[i];
-        }  
     }
 
-    a = (a + total)/n;
+    double ave = static_cast<double>(total) / n;
 
-    double ave = a;
+    ave = (int)(ave * 10) / 10.0;
 
     return ave;
 }
