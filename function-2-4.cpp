@@ -29,7 +29,7 @@ int array_min(int integers[], int length){
     }
 
     return min;
-}
+} 
 
 int array_max(int integers[], int length){
 
