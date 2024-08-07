@@ -8,11 +8,12 @@ int main(){
 
     int size = sizeof(array) / sizeof(array[0]);
 
-    double* copyArray = duplicateArray(array, size);
+    double* newArray = duplicateArray(array, size);
 
     for (int i = 0; i < size; i++){
-        std::cout << copyArray[i] << " ";
+        std::cout << newArray[i] << " ";
     }
+    std::cout<< std::endl;
 
     return 0;
 
