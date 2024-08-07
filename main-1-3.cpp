@@ -10,6 +10,10 @@ int main(){
 
     duplicateArray(array, size);
 
+    for (int i = 0; i < size; i++){
+        std::cout << array[i] << " ";
+    }
+
     return 0;
 
 }
