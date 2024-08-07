@@ -4,7 +4,7 @@ extern double* duplicateArray(double* array, int size);
 
 int main(){
 
-    double array[] = {0,1.5,3,4.5,6};
+    double array[] = {3.4,2.5,7.0,1.9,5.6,7.8};
 
     int size = sizeof(array) / sizeof(array[0]);
 
