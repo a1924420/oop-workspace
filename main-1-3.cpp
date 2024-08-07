@@ -12,4 +12,6 @@ int main(){
 
     duplicateArray(array, size);
 
+    return 0;
+
 }

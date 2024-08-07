@@ -12,4 +12,6 @@ int main(){
 
     modifyArray(array, size, value);
 
+    return 0;
+
 }
