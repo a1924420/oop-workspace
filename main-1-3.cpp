@@ -10,6 +10,8 @@ int main(){
 
     duplicateArray(array, size);
 
+    std::cout << *duplicateArray(array, size) << std::endl;
+
     return 0;
 
 }
