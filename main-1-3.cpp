@@ -1,6 +1,6 @@
 #include <iostream>
 
-extern void modifyArray(double* array, int size, double value);
+extern double* duplicateArray(double* array, int size);
 
 int main(){
 
@@ -8,9 +8,9 @@ int main(){
 
     int size = sizeof(array) / sizeof(array[0]);
 
-    double value = 1.0;
+    std::cout << "Duplicated array: ";
 
-    modifyArray(array, size, value);
+    duplicateArray(array, size);
 
     return 0;
 
