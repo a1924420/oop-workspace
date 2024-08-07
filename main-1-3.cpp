@@ -8,8 +8,6 @@ int main(){
 
     int size = sizeof(array) / sizeof(array[0]);
 
-    std::cout << "Duplicated array: ";
-
     duplicateArray(array, size);
 
     return 0;
