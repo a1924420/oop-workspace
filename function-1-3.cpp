@@ -11,7 +11,6 @@ double* duplicateArray(double* array, int size){
 
     for (int i = 0; i < size; i++){
         newArray[i] = array[i];
-        std::cout << newArray[i] << " ";
     }
 
     return newArray;
