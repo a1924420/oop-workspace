@@ -7,12 +7,8 @@ and return the pointer to the new array. In your main-1-3.cpp, call duplicateArr
 
 double* duplicateArray(double* array, int size){
 
-    array = new double[size];
-
-    for (int i = 0; i < size; i++){
-        array[i] = array[i];
-    }
+    double* newArray = array;
     
-    return array;
+    return newArray;
 
 }
