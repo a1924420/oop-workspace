@@ -10,8 +10,6 @@ int *readNumbers(){
         numbers[i] = number;
     }
 
-    std::cout << "Array has been filled" << std::endl;
-
     return numbers;
 
 }
