@@ -6,7 +6,6 @@ int *readNumbers(){
     int number;
 
     for (int i = 0; i < 10; i++){
-        std::cout << "Enter a number: ";
         std::cin >> number;
         numbers[i] = number;
     }
