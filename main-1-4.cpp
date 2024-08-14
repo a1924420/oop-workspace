@@ -22,7 +22,7 @@ int main(){
     PersonList newList = shallowCopyPersonList(list);
 
     for (int i = 0; i < n; i++){
-        std::cout << newList.people[i].name << " " << newList.people[i].age << std::endl;
+        std::cout << "name: " << newList.people[i].name << ", age: " << newList.people[i].age << std::endl;
     }
 
     delete[] newList.people;
