@@ -13,7 +13,9 @@ int main(){
 
     Cage("Fluffy", 1234);
 
-    cout << d1.getName() << " " << d1.getIDnum() << endl;
+    Cage c1;
+
+    cout << c1.getName() << " " << c1.getIDnum() << endl;
 
     return 0;
     

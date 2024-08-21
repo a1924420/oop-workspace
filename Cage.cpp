@@ -22,9 +22,4 @@ Cage::Cage(std::string newName, int newNumber){
 
 }
 
-std::string getName();
-
-int getIDnum();
-
-Cage::~Cage(){}
 
