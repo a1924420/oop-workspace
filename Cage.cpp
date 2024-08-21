@@ -2,15 +2,7 @@
 #include <string>
 #include "Cage.h"
 
-Cage::Cage(){
-
-    Cage def;
-
-    def.name = "";
-
-    def.number = 0;
-
-}
+Cage::Cage() : name(""), number(0){}
 
 Cage::Cage(std::string newName, int newNumber){
 

@@ -10,9 +10,7 @@ int main(){
 
     cout << d1.getName() << " " << d1.getIDnum() << endl;
 
-    Cage("Fluffy", 1234);
-
-    Cage c1;
+    Cage c1("Fluffy", 1234);
 
     cout << c1.getName() << " " << c1.getIDnum() << endl;
 
