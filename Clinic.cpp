@@ -17,16 +17,16 @@ Clinic::Clinic(std::string name, int max_size){
     
     Clinic c;
 
+    Cage a;
+
     c.name = name;
 
     c.max_size = max_size;
 
     Clinic* array = new Clinic[max_size];
 
-    for (int i = 0; i < max_size; i++){
-
-
-    }
-
 }
 
+bool addCage(Cage new_cage){
+
+}

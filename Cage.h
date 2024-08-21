@@ -12,7 +12,6 @@ class Cage{
 
     int number;
 
-
     public:
 
     Cage();

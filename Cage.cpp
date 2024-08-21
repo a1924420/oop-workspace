@@ -20,6 +20,7 @@ Cage::Cage(std::string newName, int newNumber){
 
     c1.number = newNumber;
 
-}
+    std::cout << c1.name << " " << c1.number << std::endl;
 
+}
 

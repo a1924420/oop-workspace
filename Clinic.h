@@ -13,6 +13,8 @@ class Clinic{
 
     int max_size;
 
+    int current_size;
+
     Cage new_cage;
 
     public:
@@ -21,9 +23,9 @@ class Clinic{
 
     Clinic(std::string name, int max_size);
 
-    int getNumber_of_cages();
+    int getNumber_of_cages(){return current_size;}
 
-    std::string getName();
+    std::string getName(){return name;}
 
     Cage * getCages();
 
