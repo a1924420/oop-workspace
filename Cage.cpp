@@ -6,13 +6,13 @@ Cage::Cage() : name(""), number(0){}
 
 Cage::Cage(std::string newName, int newNumber){
 
-    Cage c1;
+    name = newName;
 
-    c1.name = newName;
+    number = newNumber;
 
-    c1.number = newNumber;
+    getName();
 
-    std::cout << c1.name << " " << c1.number << std::endl;
+    getIDnum();
 
 }
 

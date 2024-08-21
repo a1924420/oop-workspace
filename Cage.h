@@ -1,29 +1,27 @@
 #ifndef CAGE_H
 #define CAGE_H
 
-#include <iostream>
+// #include <iostream>
 #include <string>
 
-class Cage{
+class Cage
+{
 
-    private:
-
+private:
     std::string name;
 
     int number;
 
-    public:
-
+public:
     Cage();
 
     Cage(std::string newName, int newNumber);
 
-    std::string getName(){return name;}
+    std::string getName() { return name; }
 
-    int getIDnum(){return number;}
+    int getIDnum() { return number; }
 
     ~Cage();
-
 };
 
 #endif
