@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include "Player.h"
+#include "player.h"
 
 class Wizard: public Player{
 
