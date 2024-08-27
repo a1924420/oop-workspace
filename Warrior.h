@@ -15,18 +15,11 @@ class Warrior: public Player{
 
     Warrior(std::string name, int health, int damage, std::string weapon): Player(name, health, damage), weapon(weapon) {}
 
-    void swingWeapon (Player* opponent){
-        opponent->takeDamage(getDamage());
-        std::cout << getName() << " swings their " << weapon << " at " << opponent->getName() << "!\n";
-    }
+    void swingWeapon (Player* opponent);
 
-    std::string getWeapon() const {
-        return weapon;
-    }
+    std::string getWeapon();
 
-    void setWeapon(const std::string& weapon){
-        this->weapon = weapon;
-    }
+    void setWeapon(const std::string& weapon);
 
 };
 

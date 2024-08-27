@@ -20,39 +20,21 @@ class Player{
 
     Player (std::string name, int health, int damage): name(name), health(health), damage(damage){}   
 
-    void attack (Player* opponent, int damage){
-        opponent->takeDamage(damage);
-    }
+    void attack (Player* opponent, int damage);
 
-    void takeDamage (int damage){
-        health -= damage;
-        if (health < 0) health = 0;
-        std::cout << name << " takes " << damage << " damage. Remaining health: " << health << "\n";
-    }
+    void takeDamage (int damage);
 
-    std::string getName() const {
-        return name;
-    }
+    std::string getName();
 
-    void setName(const std::string& name){
-        this->name = name;
-    }
+    void setName(const std::string& name);
 
-    int getHealth() const {
-        return health;
-    }
+    int getHealth();
 
-    void setHealth(int health){
-        this->health = health;
-    }
+    void setHealth(int health);
 
-    int getDamage() const {
-        return damage;
-    }
+    int getDamage();
 
-    void setDamage(int damage){
-        this->damage = damage;
-    }
+    void setDamage(int damage);
 
 };
 

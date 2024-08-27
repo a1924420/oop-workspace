@@ -15,18 +15,11 @@ class Wizard: public Player{
 
     Wizard(std::string name, int health, int damage, int mana): Player(name, health, damage), mana(mana) {}
 
-    void castSpell (Player* opponent){
-        opponent->takeDamage(mana);
-        std::cout << getName() << " casts a spell on " << opponent->getName() << " for " << damage << " damage.\n";
-    }
+    void castSpell (Player* opponent);
 
-    int getMana() const {
-        return mana;
-    }
+    int getMana();
 
-    void setMana(int mana){
-        this->mana = mana;
-    }
+    void setMana(int mana);
 
 };
 
