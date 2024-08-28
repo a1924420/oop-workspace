@@ -7,11 +7,11 @@
 
 class Motorbike : public Vehicle {
 
-    public: 
+    public:
     
-    Motorbike(int ID) : Vehicle(ID) {}
-
-    int getParkingDuration() const;
+    Motorbike(int ID); 
+    
+    int getParkingDuration() const; 
 
 };
 

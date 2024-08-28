@@ -3,27 +3,27 @@
 
 #include <iostream>
 #include <string>
+#include <ctime>
 
-class Vehicle{
+class Vehicle {
 
-    private:
+private:
 
     int ID;
 
-    protected:
+protected:
 
     std::time_t timeOfEntry;
 
-    public:
+public:
 
-    Vehicle (int ID);
+    Vehicle(int ID);
 
     int getID() const;
 
     virtual int getParkingDuration() const = 0;
 
     virtual ~Vehicle();
-
 };
 
 #endif
