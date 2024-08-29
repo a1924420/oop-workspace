@@ -11,11 +11,7 @@ int main(){
 
     ParkingLot myParkingLot(10);
 
-    int max = myParkingLot.getMax();
-
-        Vehicle** vehicles = new Vehicle*[max];
-
-    for (int i = 0; i < max; i++){
+    while (myParkingLot.getCount() < myParkingLot.getMax()){
 
         std::string type;
         std::cout << "Enter vehicle type (Car, Bus or Motorbike): " << std::endl;
@@ -28,14 +24,14 @@ int main(){
         Vehicle* vehicle = nullptr;
 
         if (type == "car" || type == "Car"){
-            vehicles[i]= new Car(ID);
+            vehicle= new Car(ID);
         } else if (type == "bus" || type == "Bus"){
-            vehicles[i] = new Bus(ID);
+            vehicle = new Bus(ID);
         } else if (type == "motorbike" || type == "Motorbike"){
-            vehicles[i] = new Motorbike(ID);
+            vehicle = new Motorbike(ID);
         } else {
             std::cout << "Invalid vehicle type." << std::endl;
-            i--;
+            continue;
         }
 
         if (vehicle != nullptr){

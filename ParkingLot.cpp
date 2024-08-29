@@ -23,10 +23,12 @@ void ParkingLot::parkVehicle(Vehicle* vehicle){
     for (int i = 0; i < max; i++){
         if (vehicles[i] == nullptr){
             vehicles[i] = vehicle;
+            count--;
             return;
         } 
     }
     std::cout << "The lot is full" << std::endl;
+    delete vehicle;
 
 }
 
@@ -45,5 +47,8 @@ void ParkingLot::unparkVehicle(int ID){
 }
 
 ParkingLot::~ParkingLot(){
+    for (int i = 0; i < max; i++){
+        delete vehicles[i];
+    }
     delete[] vehicles;
 }
