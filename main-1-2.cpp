@@ -52,6 +52,8 @@ int main(){
         myParkingLot.unparkVehicle(ID);
     }
 
+    myParkingLot.~ParkingLot();
+
     return 0;
     
 }
