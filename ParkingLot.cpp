@@ -2,7 +2,12 @@
 #include <string>
 #include "ParkingLot.h"
 
-ParkingLot::ParkingLot(int max) : max(max) {}
+ParkingLot::ParkingLot(int max) : max(max), count(0) {
+    vehicles = new Vehicle*[max];
+    for (int i = 0; i < max; i++){
+        vehicles[i] = nullptr;
+    }
+}
 
 int ParkingLot::getCount() const {
     return count;
@@ -23,7 +28,7 @@ void ParkingLot::parkVehicle(Vehicle* vehicle){
     for (int i = 0; i < max; i++){
         if (vehicles[i] == nullptr){
             vehicles[i] = vehicle;
-            count--;
+            count++;
             return;
         } 
     }
