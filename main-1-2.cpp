@@ -40,9 +40,18 @@ int main(){
 
     }
 
-    int ID;
-    std::cout << "Enter the ID of the car you want to unpark: " << std::endl;
-    std::cin >> ID;
-    myParkingLot.unparkVehicle(ID);
+    while (true){
+        int ID;
+        std::cout << "Enter the ID of the car you want to unpark or -1 to exit: " << std::endl;
+        std::cin >> ID;
+
+        if (ID== -1){
+            break;
+        }
+
+        myParkingLot.unparkVehicle(ID);
+    }
+
+    return 0;
     
 }
