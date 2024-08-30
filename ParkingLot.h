@@ -33,7 +33,7 @@ class ParkingLot{
 
     ~ParkingLot();
 
-    int countoverstayingVehicles(int maxParkingDuration);
+    int countOverstayingVehicles(int maxParkingDuration);
 
 };
 

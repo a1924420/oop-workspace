@@ -52,7 +52,7 @@ int main(){
         myParkingLot.unparkVehicle(ID);
     }
 
-    std::cout << myParkingLot.countoverstayingVehicles(15) << " vehicles have overstayed their parking." << std::endl;
+    std::cout << myParkingLot.countOverstayingVehicles(15) << " vehicles have overstayed their parking." << std::endl;
 
     myParkingLot.~ParkingLot();
 
