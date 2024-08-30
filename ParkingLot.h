@@ -15,6 +15,8 @@ class ParkingLot{
 
     int count;
 
+    int maxParkingDuration;
+
     public:
 
     ParkingLot(int max);
@@ -30,6 +32,8 @@ class ParkingLot{
     void unparkVehicle(int ID);
 
     ~ParkingLot();
+
+    int countoverstayingVehicles(int maxParkingDuration);
 
 };
 

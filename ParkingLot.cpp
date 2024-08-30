@@ -58,3 +58,19 @@ ParkingLot::~ParkingLot(){
     }
     delete[] vehicles;
 }
+
+int ParkingLot::countoverstayingVehicles(int maxParkingDuration){
+
+    int overstayingCount = 0;
+
+    for (int i = 0; i < max; i++){
+        if (vehicles[i] != nullptr){
+            int parkingDuration = vehicles[i]->getParkingDuration();
+            if (parkingDuration > maxParkingDuration){
+                overstayingCount++;
+            }
+        }     
+    }
+
+    return overstayingCount;
+}
