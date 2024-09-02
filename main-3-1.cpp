@@ -14,8 +14,8 @@ int main(){
     myHouse.addAppliance(&myFridge);
     myHouse.addAppliance(&myTV);
 
-    myFridge.set_isOn(true);
-    myTV.set_isOn(true);
+    myFridge.turnOn();
+    myTV.turnOn();
 
     std::cout << "Total Power Consumption: " << myHouse.getTotalPowerConsumption() << std::endl;
 
