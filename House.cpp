@@ -23,7 +23,9 @@ double House::getTotalPowerConsumption(){
     double totalConsumption = 0.0;
     for (int i = 0; i < numAppliances; i++){
         if (appliances[i] != nullptr && appliances[i]->get_isOn()){
-            totalConsumption += appliances[i]->getPowerConsumption();
+            double appliancePower = appliances[i]->getPowerConsumption();
+            totalConsumption += appliancePower;
+
         }
     }
     return totalConsumption;
