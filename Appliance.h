@@ -7,9 +7,11 @@ class Appliance {
 
     private:
 
-    int powerRating;
-
     bool isOn;
+
+    protected:
+
+    int powerRating;
 
     public:
 

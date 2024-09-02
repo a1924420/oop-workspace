@@ -1,9 +1,9 @@
 #include <iostream>
 #include "Appliance.h"
 
-Appliance::Appliance() : powerRating(0), isOn(false) {}
+Appliance::Appliance() : isOn(false), powerRating(0) {}
 
-Appliance::Appliance (int powerRating) : powerRating(powerRating), isOn(false) {}
+Appliance::Appliance (int powerRating) : isOn(false), powerRating(powerRating) {}
 
 void Appliance::turnOn(){
     isOn = true;
