@@ -5,7 +5,7 @@
 
 class AirCraft{
 
-    private:
+    protected:
 
     int weight;
 
