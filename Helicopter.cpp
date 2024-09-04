@@ -20,6 +20,10 @@ void Helicopter::fly(int headwind, int minutes){
         fuel = fuel - (0.2 * minutes) - (0.01 * weight * minutes);
     }
 
+    if (fuel < 0){
+        fuel = 0;
+    }
+
     if (fuel >= 20){
         numberOfFlights++;
     } 
