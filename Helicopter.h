@@ -22,6 +22,10 @@ class Helicopter: public AirCraft{
 
     void fly(int headwind, int minutes);
 
+    std::string get_name();
+
+    void set_name(std::string name);
+
 };
 
 #endif

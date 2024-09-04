@@ -21,6 +21,7 @@ int main(){
     std::cout << "Weight: " << h2.get_weight() << std::endl;
     std::cout << "Fuel: " << h2.get_fuel() << std::endl;
     std::cout << "Number of Flights: " << h2.get_numberOfFlights() << std::endl;
+    std::cout << "Name: " << h2.get_name() << std::endl;
 
     return 0;
 }
