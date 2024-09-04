@@ -29,11 +29,11 @@ class AirCraft{
 
     int get_numberOfFlights();
 
-    void set_weight();
+    void set_weight(int weight);
 
-    void set_fuel();
+    void set_fuel(int fuel);
 
-    void set_numberOfFlights();
+    void set_numberOfFlights(int numberOfFlights);
 
 };
 
