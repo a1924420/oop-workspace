@@ -25,6 +25,10 @@ void Airplane::fly(int headwind, int minutes){
         fuel = fuel - (0.5 * minutes) - (0.001 * numPassengers * minutes);
     }
 
+    if (fuel < 0){
+        fuel = 0;
+    }
+
     if (fuel >= 20){
         numberOfFlights++;
     } 
