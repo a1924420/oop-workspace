@@ -27,6 +27,8 @@ void Helicopter::fly(int headwind, int minutes){
     if (fuel >= 20){
         numberOfFlights++;
     } 
+
+    refuel();
 }
 
 std::string Helicopter::get_name(){ return name;}

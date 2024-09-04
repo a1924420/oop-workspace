@@ -32,4 +32,6 @@ void Airplane::fly(int headwind, int minutes){
     if (fuel >= 20){
         numberOfFlights++;
     } 
+
+    refuel();
 }
