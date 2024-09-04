@@ -21,7 +21,7 @@ class AirCraft{
 
     void refuel();
 
-    virtual void fly(int headwind, int minutes) = 0;
+    virtual void fly(int headwind, int minutes){ numberOfFlights++;}
 
     int get_weight();
 

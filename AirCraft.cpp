@@ -9,10 +9,6 @@ void AirCraft::refuel(){
     fuel = 100;
 }
 
-void AirCraft::fly(int headwind, int minutes){
-    numberOfFlights++;
-}
-
 int AirCraft::get_weight(){ return weight;}
 
 float AirCraft::get_fuel(){ return fuel;}
