@@ -11,6 +11,9 @@ Airplane::Airplane(int w, int p){
 
 void Airplane::reducePassengers(int x){
     numPassengers -= x;
+    if (numPassengers < 0){
+        numPassengers = 0;
+    }
 }
 
 int Airplane::get_numPassengers(){ return numPassengers;}
