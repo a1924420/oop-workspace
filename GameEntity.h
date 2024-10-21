@@ -21,6 +21,7 @@ class GameEntity{
 
     std::tuple<int, int> position;
     GameEntityType type;
+    int x, y;
 
     public:
 
@@ -29,6 +30,15 @@ class GameEntity{
     std::tuple<int, int> getPos(){ return position; }
 
     GameEntityType getType(){ return type; }
+
+    void setType(GameEntityType newType) {
+        this->type = newType;
+    }
+
+    void setPos(int x, int y) {
+        this->x = x;
+        this->y = y;
+    }
 
     virtual ~GameEntity(){}
 
