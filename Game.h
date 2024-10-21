@@ -60,62 +60,52 @@ class Game{
 
     void gameLoop(int maxIterations, double mineDistanceThreshold){
 
-        for (int i = 0; i < maxIterations; i++){
+    for (int i = 0; i < maxIterations; i++){
 
-            for (size_t j = 0; j < entities.size(); j++){
-
-                if (Ship* ship = dynamic_cast<Ship*>(entities[j])){
-                    ship->move(1, 0);
-                }
+        for (size_t j = 0; j < entities.size(); j++){
+            if (Ship* ship = dynamic_cast<Ship*>(entities[j])){
+                ship->move(1, 0);
             }
+        }
 
-            for (size_t j = 0; j < entities.size(); j++){
-
+        for (size_t j = 0; j < entities.size(); j++){
             if (Mine* mine = dynamic_cast<Mine*>(entities[j])){
-
                 if (mine->getType() == GameEntity::GameEntityType::NoneType) {
                     continue; 
                 }
 
                 for (size_t k = 0; k < entities.size(); k++){
                     if (Ship* ship = dynamic_cast<Ship*>(entities[k])){
-
                         double distance = Utils::calculateDistance(ship->getPos(), mine->getPos());
 
                         if (distance < mineDistanceThreshold){
-
-                            mine->explode();
-
+                            Explosion explosion = mine->explode();
                             std::cout << "Mine exploded!" << std::endl;
 
-                            break;  
+                            explosion.apply(*ship);
+                            std::cout << "Entity Type: " << static_cast<int>(ship->getType()) << std::endl;
                         }
                     }
                 }
             }
         }
 
-            bool allShipsDestroyed = true;
-
-            for (size_t j = 0; j < entities.size(); j++){
-
-                if (Ship* ship = dynamic_cast<Ship*>(entities[j])){
-
-                    if (ship->getType() != GameEntity::GameEntityType::NoneType){
-                        allShipsDestroyed = false;
-                        break;
-                    }
+        bool allShipsDestroyed = true;
+        for (size_t j = 0; j < entities.size(); j++){
+            if (Ship* ship = dynamic_cast<Ship*>(entities[j])){
+                if (ship->getType() != GameEntity::GameEntityType::NoneType){
+                    allShipsDestroyed = false;
+                    break;
                 }
             }
+        }
 
-            if (allShipsDestroyed == true){
-
-                std::cout << "All ships have been destroyed." << std::endl;
-                break;
-
-            }
+        if (allShipsDestroyed){
+            std::cout << "All ships have been destroyed." << std::endl;
+            break;
         }
     }
+}
 
     
 
