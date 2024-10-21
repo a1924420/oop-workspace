@@ -13,9 +13,9 @@ class Utils{
 
     static std::tuple<int, int> generateRandomPos(int gridWidth, int gridHeight){
 
-        int x = (rand() % gridWidth) + 1;
+        int x = rand() % gridWidth;
 
-        int y = (rand() % gridHeight) + 1;
+        int y = rand() % gridHeight;
 
         std::tuple<int, int> position(x, y);
 

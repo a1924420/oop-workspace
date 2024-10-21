@@ -30,6 +30,8 @@ class GameEntity{
 
     GameEntityType getType(){ return type; }
 
+    virtual ~GameEntity(){}
+
 };
 
 #endif
