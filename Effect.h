@@ -2,6 +2,7 @@
 #define EFFECT_H
 
 #include <iostream>
+#include <tuple>
 #include "GameEntity.h"
 
 class Effect{
