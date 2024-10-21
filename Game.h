@@ -73,7 +73,7 @@ class Game{
 
                 if (Mine* mine = dynamic_cast<Mine*>(entities[j])){
 
-                    for (auto other : entities){
+                    for (GameEntity* other : entities){
 
                         if (Ship* ship = dynamic_cast<Ship*>(entities[j])){
 
