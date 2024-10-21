@@ -71,22 +71,29 @@ class Game{
 
             for (size_t j = 0; j < entities.size(); j++){
 
-                if (Mine* mine = dynamic_cast<Mine*>(entities[j])){
+            if (Mine* mine = dynamic_cast<Mine*>(entities[j])){
 
-                    for (GameEntity* other : entities){
+                if (mine->getType() == GameEntity::GameEntityType::NoneType) {
+                    continue; 
+                }
 
-                        if (Ship* ship = dynamic_cast<Ship*>(entities[j])){
+                for (size_t k = 0; k < entities.size(); k++){
+                    if (Ship* ship = dynamic_cast<Ship*>(entities[k])){
 
-                            double distance = Utils::calculateDistance(ship->getPos(), mine->getPos());
+                        double distance = Utils::calculateDistance(ship->getPos(), mine->getPos());
 
-                            if (distance < mineDistanceThreshold){
-                                mine->explode();
-                                break;
-                            }
+                        if (distance < mineDistanceThreshold){
+
+                            mine->explode();
+
+                            std::cout << "Mine exploded!" << std::endl;
+
+                            break;  
                         }
                     }
                 }
             }
+        }
 
             bool allShipsDestroyed = true;
 
