@@ -17,6 +17,7 @@ class Explosion: public GameEntity, public Effect {
 
     void apply(GameEntity& entity) override {
         entity.setType(GameEntity::GameEntityType::NoneType);  
+        entity.setPos(-1, -1);
     }
 
 };
