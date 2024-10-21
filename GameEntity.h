@@ -24,7 +24,7 @@ class GameEntity{
 
     public:
 
-    GameEntity(int x, int y, char type): position(x, y) {}
+    GameEntity(int x, int y, GameEntityType type): position(x, y), type(type) {}
 
     std::tuple<int, int> getPos(){ return position; }
 
