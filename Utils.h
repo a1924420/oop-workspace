@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <tuple>
+#include <cmath>
 
 class Utils{
 

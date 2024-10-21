@@ -1,5 +1,7 @@
 #include <iostream>
 #include <tuple>
+#include <cmath>
+
 #include "GameEntity.h"
 #include "Effect.h"
 #include "Utils.h"
