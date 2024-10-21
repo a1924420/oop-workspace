@@ -17,7 +17,7 @@ class GameEntity{
 
     };
 
-    private:
+    protected:
 
     std::tuple<int, int> position;
     GameEntityType type;
