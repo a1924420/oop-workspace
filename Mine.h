@@ -14,10 +14,6 @@ class Mine: public GameEntity{
 
     Explosion explode(){
 
-        if (type == GameEntityType::NoneType) {
-            return Explosion(-1, -1); 
-        }
-
         Explosion explosion(std::get<0>(position), std::get<1>(position));
 
         type = GameEntityType::NoneType;
