@@ -8,7 +8,7 @@ class GameEntity{
 
     public:
 
-    enum class GameEntityType {
+    enum GameEntityType {
 
         ExplosionType,
         MineType,
