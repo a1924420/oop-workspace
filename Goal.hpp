@@ -23,6 +23,8 @@ class Goal: public Interactable{
 
     bool interact(Scientist* player) override {
 
+        //int distance = manhattanDistance(player->getCoordinates(), (width, height));
+
         if (player->getExperimentCount() >= 1){
             return true;
         } else {
