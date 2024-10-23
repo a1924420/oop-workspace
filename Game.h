@@ -90,8 +90,6 @@ class Game{
 
                                     mine->explode();
 
-                                    std::cout << "Mine exploded!" << std::endl;
-
                                     Explosion explosion(-1, -1);
 
                                     explosion.apply(*ship);
@@ -123,7 +121,6 @@ class Game{
                 }
 
                 if (allShipsDestroyed) {
-                    std::cout << "All ships have been destroyed." << std::endl;
                     break;
                 }
             }
