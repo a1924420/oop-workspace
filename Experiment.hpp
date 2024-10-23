@@ -23,7 +23,7 @@ class Experiment: public Interactable{
     }
 
     InteractableType getType() override {
-        return Interactable::InteractableType::EXPERIMENT;
+        return InteractableType::EXPERIMENT;
     }
 
 };
