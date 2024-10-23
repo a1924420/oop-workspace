@@ -73,7 +73,9 @@ class Game{
             std::vector<int> minesToDelete;
 
             for (int k = 0; k < entities.size(); k++){
-                if (Mine* mine = dynamic_cast<Mine*>(entities[k])){
+                if (entities[k]->getType() == GameEntity::GameEntityType::MineType){
+
+                    Mine* mine = dynamic_cast<Mine*>(entities[k]);
 
                     if (mine->getType() == GameEntity::GameEntityType::NoneType){
 
@@ -83,7 +85,9 @@ class Game{
 
                         for (int m = 0; m < entities.size(); m++){
 
-                            if (Ship* ship = dynamic_cast<Ship*>(entities[m])) {
+                            if (entities[m]->getType() == GameEntity::GameEntityType::ShipType) {
+
+                                Ship* ship = dynamic_cast<Ship*>(entities[m]);
 
                                 double distance = Utils::calculateDistance(ship->getPos(), mine->getPos());
 
