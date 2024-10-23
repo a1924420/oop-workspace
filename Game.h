@@ -64,7 +64,8 @@ class Game{
 
             for (int j = 0; j < entities.size(); j++){
 
-                if (Ship* ship = dynamic_cast<Ship*>(entities[j])){
+                if (entities[j]->getType() == GameEntity::GameEntityType::ShipType){
+                    Ship* ship = dynamic_cast<Ship*>(entities[j]);
                     ship->move(1,0);
                 }
             }
