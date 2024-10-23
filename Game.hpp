@@ -64,9 +64,9 @@ class Game{
     }
 
     void printGrid(){
-        for (int i = 0; i < width; i ++){
+        for (int i = 0; i < height; i ++){
             std::cout << "_";
-            for (int j = 0; j < height; j++){
+            for (int j = 0; j < width; j++){
                 std::cout << "\n";
             }
         }
