@@ -25,7 +25,7 @@ class Goal: public Interactable{
 
         //int distance = manhattanDistance(player->getCoordinates(), (width, height));
 
-        if (player->getExperimentCount() >= 1){
+        if (player->getExperimentCount() >= 1 /*&& distance == 0*/){
             return true;
         } else {
             return false;
