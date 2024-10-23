@@ -55,6 +55,23 @@ class Game{
         }
     }
 
+    void movePlayer(int dx, int dy){
+        int x, y;
+
+        std::tie(x, y);
+
+        std::pair<int, int> coordinates = std::make_pair(x + dx, y + dy);
+    }
+
+    void printGrid(){
+        for (int i = 0; i < width; i ++){
+            std::cout << "_";
+            for (int j = 0; j < height; j++){
+                std::cout << "\n";
+            }
+        }
+    }
+
 };
 
 #endif
