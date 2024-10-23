@@ -9,15 +9,17 @@
 #include "GridItem.hpp"
 #include "Scientist.hpp"
 
-class Interactable: public GridItem{
-
-    public:
-
-    enum InteractableType{
+enum class InteractableType{
         GOAL,
         EXPERIMENT
     };
 
+
+class Interactable: public GridItem{
+
+    public:
+
+    
     private:
 
     int activeGridItemCount;

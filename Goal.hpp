@@ -33,7 +33,7 @@ class Goal: public Interactable{
     }
 
     InteractableType getType() override {
-        return Interactable::InteractableType::GOAL;
+        return InteractableType::GOAL;
     }
 
 };
