@@ -101,6 +101,11 @@ class Game{
                             }
                         }
 
+                        for (int idx : minesToDelete) {
+                            delete entities[idx];  
+                            entities.erase(entities.begin() + idx);  
+                        }
+
                         for (int n = 0; n < entities.size(); n++){
                             if (entities[n]->getType() == GameEntity::GameEntityType::NoneType){
                                 delete entities[n];
