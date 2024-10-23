@@ -7,7 +7,7 @@
 
 class GridItem{
 
-    private:
+    protected:
 
     std::pair<int, int> coordinates;
 
