@@ -16,7 +16,7 @@ class Scientist: public GridItem{
 
     public:
 
-    Scientist(int gridWidth, int gridHeight): GridItem(), experimentCount(0){}
+    Scientist(int gridWidth, int gridHeight): GridItem(0, 0, gridWidth, gridHeight), experimentCount(0){}
 
     int getExperimentCount(){ return experimentCount; }
 
