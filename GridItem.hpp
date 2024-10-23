@@ -35,7 +35,7 @@ class GridItem{
 
     int getGridHeight(){ return height; }
 
-    static int GridItem::getActiveGridItemCount(){}
+    static int GridItem::getActiveGridItemCount();
 
     virtual ~GridItem(){
         activeGridItemCount--;
