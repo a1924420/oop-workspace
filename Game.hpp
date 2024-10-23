@@ -13,7 +13,7 @@
 #include "Goal.hpp"
 #include "Experiment.hpp"
 
-class Game{
+/*class Game{
 
     public:
 
@@ -72,6 +72,6 @@ class Game{
         }
     }
 
-};
+};*/
 
 #endif
