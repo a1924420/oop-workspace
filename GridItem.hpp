@@ -19,7 +19,9 @@ class GridItem{
 
     public:
 
-    GridItem(int x, int y, int width, int height) : coordinates(x, y), width(width), height(height){}
+    GridItem(int x, int y, int width, int height) : coordinates(x, y), width(width), height(height){
+        activeGridItemCount++;
+    }
 
     GridItem() : coordinates(0, 0), width(0), height(0){}
 
